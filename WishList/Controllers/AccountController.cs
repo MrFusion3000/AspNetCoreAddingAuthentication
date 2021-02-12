@@ -12,13 +12,13 @@ namespace WishList.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> userManager;
-        private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
         public AccountController(UserManager<ApplicationUser> _userManager, SignInManager<ApplicationUser> _signInManager)
         {
-            userManager = _userManager;
-            signInManager = _signInManager;
+            //private readonly UserManager<ApplicationUser> _userManager;
+            //private readonly SignInManager<ApplicationUser> _signInManager;
         }
 
         public IActionResult Index()
